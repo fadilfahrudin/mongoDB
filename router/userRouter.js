@@ -7,6 +7,6 @@ const { createUser, updateUser, deleteUser, getUser } = require('../controller/u
 router.get('/', getUser)
 router.post('/', upload.none() ,createUser)
 router.put('/:id', upload.none() ,updateUser)
-router.delete('/:id', upload.none() ,deleteUser)
+router.delete('/:id', deleteUser)
 
 module.exports = router
